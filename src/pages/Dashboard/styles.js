@@ -6,18 +6,16 @@ export const Container = styled.div`
     padding: 0px;
   }
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  div#main-section {
+    background-color: white;
+    height: 560px;
+  }
 
-    table {
-      background: gray;
-
-      th {
-        background: red;
-      }
-    }
+  p#name-section {
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 30px;
   }
 `;
