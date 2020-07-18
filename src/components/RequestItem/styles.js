@@ -45,7 +45,7 @@ export const StatusData = styled.div`
     padding: 3px;
     color: chartreuse;
     font-weight: bold;
-    margin-left: 170px;
+    margin-left: 150px;
 `;
 
 export const FinishButton = styled.button`
