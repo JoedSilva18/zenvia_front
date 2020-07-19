@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   p#name-section {
     font-size: 25px;
-    color: black;
+    color: #333;
     padding: 10px;
     font-weight: bold;
     margin-left: 30px;

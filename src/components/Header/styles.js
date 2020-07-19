@@ -10,16 +10,18 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-    height: 65px;
-    width: 100%;
-    background-color: orangered;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 65px;
+  width: 100%;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 76px 127px 164px 200px rgba(0, 0, 0, 0.75);
 `;
 
 export const Brand = styled.div`
-    height: 45px;
-    color: white;
-    font-size: 30px;
+  height: 45px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 `;

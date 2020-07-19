@@ -16,10 +16,9 @@ function Dashboard() {
       <div id="main-section">
         <p id="name-section">Pedidos Pendentes</p>
 
-        <Filters></Filters>
+        <Filters />
 
-        <Requests></Requests>
-
+        <Requests />
       </div>
     </Container>
   );

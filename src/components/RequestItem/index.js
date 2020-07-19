@@ -2,34 +2,59 @@ import React from 'react';
 
 import api from '../../services/api';
 
-import { Container, Number, Description, ClientData, StatusData, FinishButton } from './styles.js';
+import {
+  Container,
+  Number,
+  Description,
+  ClientData,
+  StatusData,
+  FinishButton,
+} from './styles.js';
 
 export default function RequestItem({ request }) {
-    async function handleFinishRequest() {
-        const success = await api.delete(`request/${request.id}`);
+  async function handleFinishRequest() {
+    const success = await api.delete(`request/${request.id}`);
 
-        window.location.reload();
-    }
+    window.location.reload();
+  }
 
-    return (
-        <Container>
-            <Number>#{request.id}</Number>
-            <Description>{request.description}</Description>
-            <ClientData>
-                <p>{request.client_name}</p>
-                <p>CEP: {request.zip_code}</p>
-                <p>{request.address}</p>
-                <p>Telefone: {request.telephone_number}</p>
-            </ClientData>
+  return (
+    <Container>
+      <Number>#{request.id}</Number>
+      <Description>{request.description}</Description>
+      <hr />
+      <ClientData>
+        <p>
+          <b>Nome:</b> {request.client_name}
+        </p>
+        <p>
+          <b>Telefone:</b> {request.telephone_number}
+        </p>
+        {request.delivery ? (
+          <>
+            <p>
+              <b>CEP:</b> {request.zip_code}
+            </p>
+            <p>
+              <b>Endereço: </b>
+              {request.address}
+            </p>
+          </>
+        ) : (
+          <b>Cliente irá retirar no local</b>
+        )}
+      </ClientData>
 
-            <StatusData>
-                <p>R$ {request.total_value}</p>
-                <p>{request.delivery ? 'Entregar' : 'Retirar'}</p>
-                <p>{request.request_status}</p>
-            </StatusData>
-            
+      <StatusData>
+        <p>
+          <b>Valor total: </b>R$ {request.total_value}
+        </p>
+        <p>{request.request_status}</p>
+      </StatusData>
 
-            <FinishButton onClick={handleFinishRequest}>Finalizar pedido</FinishButton>
-        </Container>
-    );
+      <FinishButton onClick={handleFinishRequest}>
+        Finalizar pedido
+      </FinishButton>
+    </Container>
+  );
 }
