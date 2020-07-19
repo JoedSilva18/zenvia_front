@@ -29,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const Number = styled.span`
-  background-color: red;
+  background-color: orangered;
   border-radius: 5px;
   color: #fff;
   font-weight: bold;
@@ -65,7 +65,7 @@ export const StatusData = styled.div`
 `;
 
 export const FinishButton = styled.button`
-  background-color: red;
+  background-color: orangered;
   color: white;
   border-radius: 5px;
   font-size: 25px;
@@ -78,6 +78,6 @@ export const FinishButton = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: ${shade(0.2, 'red')};
+    background-color: ${shade(0.2, 'orangered')};
   }
 `;

@@ -1,12 +1,12 @@
 import React from 'react';
-import { GlobalStyle, Container, Brand } from './styles.js';
+import { GlobalStyle, Container, Brand, Name } from './styles.js';
 
 export default function Header(props) {
   return (
     <>
       <GlobalStyle />
       <Container>
-        <Brand>{props.name}</Brand>
+        <Brand> Nosso nome</Brand>
       </Container>
     </>
   );

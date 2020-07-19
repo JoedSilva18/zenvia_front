@@ -12,10 +12,19 @@ export const Container = styled.div`
   }
 
   p#name-section {
-    font-size: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 37px;
     color: #333;
     padding: 10px;
     font-weight: bold;
-    margin-left: 30px;
   }
+`;
+
+export const Title = styled.h1`
+  margin-top: 20px;
+  color: #333;
+  font-size: 45px;
+  margin-left: calc(50% - 200px);
 `;

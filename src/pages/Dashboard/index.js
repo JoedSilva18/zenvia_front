@@ -6,18 +6,18 @@ import Requests from '../../components/Requests';
 
 import api from '../../services/api';
 
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 function Dashboard() {
   return (
     <Container>
-      <Header name="Salgados do seu Zé" />
+      <Header />
 
       <div id="main-section">
-        <p id="name-section">Pedidos Pendentes</p>
+        <Title>Salgados do seu Zé</Title>
+        <p id="name-section">Pedidos Pendentes:</p>
 
         <Filters />
-
         <Requests />
       </div>
     </Container>

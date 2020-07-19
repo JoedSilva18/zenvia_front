@@ -4,24 +4,28 @@ export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 `;
 
 export const Container = styled.div`
-  height: 65px;
+  height: 85px;
   width: 100%;
   background-color: orangered;
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 76px 127px 164px 200px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 2px gray;
+`;
+
+export const Name = styled.h3`
+  margin-left: 40px;
+  color: #fff;
 `;
 
 export const Brand = styled.div`
-  height: 45px;
+  margin-left: 40px;
+  height: 40px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 `;
