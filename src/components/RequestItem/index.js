@@ -15,8 +15,6 @@ export default function RequestItem({ request }) {
   async function handleFinishRequest() {
     const success = await api.delete(`request/${request.id}`);
 
-    api.post(`sms/${request.id}`);
-
     window.location.reload();
   }
 
