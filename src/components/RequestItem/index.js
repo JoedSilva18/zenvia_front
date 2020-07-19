@@ -1,8 +1,16 @@
 import React from 'react';
 
+import api from '../../services/api';
+
 import { Container, Number, Description, ClientData, StatusData, FinishButton } from './styles.js';
 
 export default function RequestItem({ request }) {
+    async function handleFinishRequest() {
+        const success = await api.delete(`request/${request.id}`);
+
+        window.location.reload();
+    }
+
     return (
         <Container>
             <Number>#{request.id}</Number>
@@ -21,7 +29,7 @@ export default function RequestItem({ request }) {
             </StatusData>
             
 
-            <FinishButton type="submit">Finalizar pedido</FinishButton>
+            <FinishButton onClick={handleFinishRequest}>Finalizar pedido</FinishButton>
         </Container>
     );
 }
