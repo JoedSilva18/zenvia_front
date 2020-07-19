@@ -2,22 +2,22 @@ import React from 'react';
 
 import { Container, Number, Description, ClientData, StatusData, FinishButton } from './styles.js';
 
-export default function RequestItem(props) {
+export default function RequestItem({ request }) {
     return (
         <Container>
-            <Number>#1</Number>
-            <Description>50 coxinhas, 20 bolinhas de queijo</Description>
+            <Number>#{request.id}</Number>
+            <Description>{request.description}</Description>
             <ClientData>
-                <p>Dorival</p>
-                <p>CEP: 88820-720</p>
-                <p>Rua Unicamp Campinas - 570</p>
-                <p>Telefone: 0800-0800</p>
+                <p>{request.client_name}</p>
+                <p>CEP: {request.zip_code}</p>
+                <p>{request.address}</p>
+                <p>Telefone: {request.telephone_number}</p>
             </ClientData>
 
             <StatusData>
-                <p>R$ 18,90</p>
-                <p>Entregar</p>
-                <p>Em Andamento</p>
+                <p>R$ {request.total_value}</p>
+                <p>{request.delivery ? 'Entregar' : 'Retirar'}</p>
+                <p>{request.request_status}</p>
             </StatusData>
             
 

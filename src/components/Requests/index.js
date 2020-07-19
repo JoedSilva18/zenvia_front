@@ -13,7 +13,7 @@ export default function Requests() {
         async function loadRequests() {
             const response = await api.get('/request');
 
-            setRequests(response);
+            setRequests(response.data); 
         }
 
         loadRequests();
@@ -21,12 +21,9 @@ export default function Requests() {
 
     return (
         <Container>
-            <RequestItem></RequestItem>
-            <RequestItem></RequestItem>
-            <RequestItem></RequestItem>
-            <RequestItem></RequestItem>
-            <RequestItem></RequestItem>
-            <RequestItem></RequestItem>
+            {requests.map(request => (
+                <RequestItem key={request.id} request={request} />
+            ))}
 
         </Container>
     );
