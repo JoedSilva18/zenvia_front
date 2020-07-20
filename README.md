@@ -10,7 +10,7 @@
 Com a crise gerada pelo novo coronavirus, diversas empresas e microempreendedores se viram na necessidade de acelerar o processo de transformação digital. Entretatdo, muitos profissionais autonomos não consgeuiram se adaptar gerando assim, dificuldades financeiras.
  
  ### A Ideia
-Nosso projeto visa auxiliar o profissional autonomo a divulgar e gerenciar seus serviços através do whatsapp. Com a crise, muito deles começaram a oferecer seus serviços através dessas rede social, no entanto, eles acabam tendo problemas para conseguir gerenciar as mensagens e obter as informaçes que realmente são relevantes. Com nosso sistema, ele consegue automatizar esse processo através de um bot e obter as informaçes de forma estruturada através de um dashboard.
+Nosso projeto visa auxiliar o profissional autônomo a divulgar e gerenciar seus serviços através do Whatsapp. Com a crise, muito deles começaram a oferecer seus serviços através dessas rede social, no entanto, eles acabam tendo problemas para conseguir gerenciar as mensagens e obter as informações que realmente são relevantes. Com nosso sistema, ele consegue automatizar esse processo através de um Bot e obter as informações de forma estruturada através de um Dashboard.
 
 ### Executando o projeto
 Enviar a mensagem "low-honeysuckle" (sem aspas) para o número +55 11 4837-7404. 
