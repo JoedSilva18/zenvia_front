@@ -14,7 +14,7 @@ function Dashboard() {
       <Header />
 
       <div id="main-section">
-        <Title>Salgados do seu Zé</Title>
+        <Title>Salgados da Ana</Title>
         <p id="name-section">Pedidos Pendentes:</p>
 
         <Filters />

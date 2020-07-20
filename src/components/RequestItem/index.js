@@ -28,7 +28,7 @@ export default function RequestItem({ request }) {
           <b>Nome:</b> {request.client_name}
         </p>
         <p>
-          <b>Telefone:</b> {request.telephone_number}
+          <b>Telefone:</b> *********
         </p>
         {request.delivery ? (
           <>
@@ -41,8 +41,8 @@ export default function RequestItem({ request }) {
             </p>
           </>
         ) : (
-          <b>Cliente irá retirar no local</b>
-        )}
+            <b>Cliente irá retirar no local</b>
+          )}
       </ClientData>
 
       <StatusData>

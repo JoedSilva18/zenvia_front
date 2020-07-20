@@ -6,7 +6,7 @@ export default function Header(props) {
     <>
       <GlobalStyle />
       <Container>
-        <Brand> Nosso nome</Brand>
+        <Brand>ZapEncomendas</Brand>
       </Container>
     </>
   );
