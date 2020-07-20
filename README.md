@@ -21,6 +21,7 @@ Exemplo de diálogo com o bot:
 <img src="https://i.imgur.com/qwP980O.jpg" height="360" width="220" />
 
 Após a realização do pedido, o mesmo ir aparecer no link:
+
 Ao Clicar em "Finalizar pedido", você deve receber um SMS com o status do seu pedido.
 
 ### Saiba mais
